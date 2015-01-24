@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.76000023, y: -1.71000004, z: 0}
+  m_LocalPosition: {x: -22, y: 2, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 480534}
@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 2
-  destroyedBox: {fileID: 21300004, guid: e5e275498558a2542bb0465fa5e30d9b, type: 3}
-  damagedBox: {fileID: 21300004, guid: 361e1e5d552ad444fb688b5203c01caa, type: 3}
+  material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
+  material_destroyed: {fileID: 0}
   deathClips: []
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!1001 &100100000

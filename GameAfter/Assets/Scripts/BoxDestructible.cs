@@ -4,17 +4,20 @@ using System.Collections;
 public class BoxDestructible : MonoBehaviour {
 
 	public int HP = 2;					// How many times the enemy can be hit before it dies.
-	public Sprite destroyedBox;			// A sprite of the box when it's destroyed.
-	public Sprite damagedBox;			// An optional sprite of the box when it's damaged
+	//public Texture2D destroyedBox;			// A sprite of the box when it's destroyed.
+	//public Texture2D damagedBox;			// An optional sprite of the box when it's damaged
+	public Material material_damaged;
+	public Material material_destroyed;
 	public AudioClip[] deathClips;		// An array of audioclips that can play when the enemy dies.
 	public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
 
-	private SpriteRenderer ren;			// Reference to the sprite renderer.
+	private MeshRenderer ren;			// Reference to the sprite renderer.
 	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool destroyed = false;			// Whether or not the enemy is dead.
 	private Score score;				// Reference to the Score script.
 
-
+	//private Texture2D destroyedBox;
+	//private Texture2D damagedBox;
 
 
 	bool holding = false;
@@ -24,10 +27,26 @@ public class BoxDestructible : MonoBehaviour {
 
 	void Awake()
 	{
+
 		// Setting up the references.
-		ren = transform.Find("body").GetComponent<SpriteRenderer>();
-		frontCheck = transform.Find("frontCheck").transform;
-		score = GameObject.Find("Score").GetComponent<Score>();
+		ren = transform.Find("Cube").GetComponent<MeshRenderer>();
+		//frontCheck = transform.Find("frontCheck").transform;
+		//score = GameObject.Find("Score").GetComponent<Score>();
+		/*
+		damagedBox = new Texture2D( (int)damagedBoxSprite.rect.width, (int)damagedBoxSprite.rect.height );
+
+		//damagedBoxSprite.
+		var pixels = damagedBoxSprite.texture.GetPixels( (int)damagedBoxSprite.textureRect.x,
+		                                      (int)damagedBoxSprite.textureRect.y,
+		                                      (int)damagedBoxSprite.textureRect.width,
+		                                      (int)damagedBoxSprite.textureRect.height );
+		
+		damagedBox.SetPixels( pixels );
+		damagedBox.Apply();
+		*/
+
+
+
 
 		//playerTransform = GameObject.Find("Player").transform;
 
@@ -38,6 +57,9 @@ public class BoxDestructible : MonoBehaviour {
 
 		// Reduce the number of hit points by one.
 		HP--;
+
+		if (HP < 1)
+						Desctruction ();
 	}
 
 	void Desctruction()
@@ -53,10 +75,10 @@ public class BoxDestructible : MonoBehaviour {
 		
 		// Re-enable the main sprite renderer and set it's sprite to the deadEnemy sprite.
 		ren.enabled = true;
-		ren.sprite = destroyedBox;
+		//ren.material = material_destroyed; // TODO? new image
 		
 		// Increase the score by 100 points
-		score.score += 100;
+		//score.score += 100;
 		
 		// Set dead to true.
 		destroyed = true;
@@ -106,7 +128,7 @@ public class BoxDestructible : MonoBehaviour {
 		}
 		else 
 		{
-			Debug.Log ("no longer holding");
+			//Debug.Log ("no longer holding");
 			holding =false;
 			//this.collider2D.enabled = true;
 			//this.rigidbody2D.isKinematic = false;
@@ -161,7 +183,7 @@ public class BoxDestructible : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Create an array of all the colliders in front of the enemy.
-		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
+		//Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
 
 
 		
@@ -181,11 +203,15 @@ public class BoxDestructible : MonoBehaviour {
 		
 		// Set the enemy's velocity to moveSpeed in the x direction.
 		//rigidbody2D.velocity = new Vector2(transform.localScale.x * moveSpeed, rigidbody2D.velocity.y);	
+
+		Texture2D tex = Resources.Load("part_flame.png") as Texture2D;
 		
 		// If the enemy has one hit point left and has a damagedEnemy sprite...
-		if(HP == 1 && damagedBox != null)
+		if(HP == 1)
 			// ... set the sprite renderer's sprite to be the damagedEnemy sprite.
-			ren.sprite = damagedBox;
+			//ren.sprite = damagedBox;
+			//this.renderer.material.mainTexture = tex;
+			ren.material = material_damaged; // .material.SetTexture("Box_damaged", damagedBox);
 		
 		// If the enemy has zero or fewer hit points and isn't dead yet...
 		if(HP <= 0 && !destroyed)
