@@ -31,7 +31,7 @@ public class ScrollingCredits : MonoBehaviour
 						this.transform.position = _tmp; // change Transform.position with it's setter		
 				} else if (counter < 100) {
 						counter = counter + 1;	
-						Application.LoadLevel ("0 - Intro");
+						Application.LoadLevel ("2 - Level 1");
 
 				}
 
