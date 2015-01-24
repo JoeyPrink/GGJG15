@@ -58,6 +58,17 @@ public class Rocket : MonoBehaviour
 			// Destroy the rocket.
 			Destroy (gameObject);
 		}
+		else if (col.tag == "tree_chopable") 
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<choppableTree> ().Hit ();
+			
+			// Call the explosion instantiation.
+			OnExplode ();
+			
+			// Destroy the rocket.
+			Destroy (gameObject);
+		}
 		// Otherwise if it hits a bomb crate...
 		else if(col.tag == "BombPickup")
 		{
