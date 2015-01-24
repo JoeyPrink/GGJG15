@@ -55,7 +55,7 @@ public class LevelBuilder : MonoBehaviour {
 				case 'S':
 					block = (GameObject)(Instantiate(Stairs));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					//block.transform;
+					block.transform.localScale = new Vector3(-1, 1, 1);
 					break;
 				// TODO more types?
 				default:
