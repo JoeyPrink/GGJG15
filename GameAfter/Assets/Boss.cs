@@ -18,16 +18,23 @@ public class Boss : MonoBehaviour
 	private SpriteRenderer ren;			// Reference to the sprite renderer.
 	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool dead = false;			// Whether or not the enemy is dead.
+<<<<<<< HEAD
 	private Score score;				// Reference to the Score script.
 	private SpriteRenderer spriteRenderer;
 
+=======
+	
+>>>>>>> 7ae8757b69ace158a5f435afb081ec5f28b686a6
 	
 	void Awake()
 	{
 		// Setting up the references.
 		ren = transform.Find("body").GetComponent<SpriteRenderer>();
 		frontCheck = transform.Find("frontCheck").transform;
+<<<<<<< HEAD
 		//score = GameObject.Find("Score").GetComponent<Score>();
+=======
+>>>>>>> 7ae8757b69ace158a5f435afb081ec5f28b686a6
 	}
 	
 	void FixedUpdate ()
@@ -81,9 +88,13 @@ public class Boss : MonoBehaviour
 		// Re-enable the main sprite renderer and set it's sprite to the deadEnemy sprite.
 		ren.enabled = true;
 		ren.sprite = deadEnemy;
+<<<<<<< HEAD
 		
 		// Increase the score by 100 points
 		//score.score += 100;
+=======
+
+>>>>>>> 7ae8757b69ace158a5f435afb081ec5f28b686a6
 		
 		// Set dead to true.
 		dead = true;
