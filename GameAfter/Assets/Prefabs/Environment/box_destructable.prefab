@@ -10,7 +10,11 @@ GameObject:
   - 4: {fileID: 480532}
   - 61: {fileID: 6180532}
   - 114: {fileID: 11480532}
+<<<<<<< HEAD
   - 50: {fileID: 5000000}
+=======
+  - 50: {fileID: 5079250}
+>>>>>>> Made box destructable, added damaged texture
   m_Layer: 12
   m_Name: box_destructable
   m_TagString: box_destructible
@@ -87,7 +91,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180534}
   m_Mesh: {fileID: 4300000, guid: f25b5d29ee365aa45bdf90f0f233da5b, type: 3}
+<<<<<<< HEAD
 --- !u!50 &5000000
+=======
+--- !u!50 &5079250
+>>>>>>> Made box destructable, added damaged texture
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
