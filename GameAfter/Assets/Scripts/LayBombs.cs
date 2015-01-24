@@ -16,14 +16,14 @@ public class LayBombs : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up the reference.
-		bombHUD = GameObject.Find("ui_bombHUD").guiTexture;
+		//bombHUD = GameObject.Find("ui_bombHUD").guiTexture;
 	}
 
 
 	void Update ()
 	{
 		// If the bomb laying button is pressed, the bomb hasn't been laid and there's a bomb to lay...
-		if(Input.GetButtonDown("Fire2") && !bombLaid && bombCount > 0)
+	/*	if(Input.GetButtonDown("Fire2") && !bombLaid && bombCount > 0)
 		{
 			// Decrement the number of bombs.
 			bombCount--;
@@ -36,9 +36,9 @@ public class LayBombs : MonoBehaviour
 
 			// Instantiate the bomb prefab.
 			Instantiate(bomb, transform.position, transform.rotation);
-		}
+		}*/
 
 		// The bomb heads up display should be enabled if the player has bombs, other it should be disabled.
-		bombHUD.enabled = bombCount > 0;
+		//bombHUD.enabled = bombCount > 0;
 	}
 }

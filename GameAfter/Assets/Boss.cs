@@ -11,20 +11,23 @@ public class Boss : MonoBehaviour
 	public GameObject hundredPointsUI;	// A prefab of 100 that appears when the enemy dies.
 	public float deathSpinMin = -100f;			// A value to give the minimum amount of Torque when dying
 	public float deathSpinMax = 100f;			// A value to give the maximum amount of Torque when dying
-	
-	
+	public bool isIntro = true;
+	public Sprite newSpriteDoor;
+	public Sprite newSpriteLife;
+
 	private SpriteRenderer ren;			// Reference to the sprite renderer.
 	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool dead = false;			// Whether or not the enemy is dead.
 	private Score score;				// Reference to the Score script.
-	
+	private SpriteRenderer spriteRenderer;
+
 	
 	void Awake()
 	{
 		// Setting up the references.
 		ren = transform.Find("body").GetComponent<SpriteRenderer>();
 		frontCheck = transform.Find("frontCheck").transform;
-		score = GameObject.Find("Score").GetComponent<Score>();
+		//score = GameObject.Find("Score").GetComponent<Score>();
 	}
 	
 	void FixedUpdate ()
@@ -80,7 +83,7 @@ public class Boss : MonoBehaviour
 		ren.sprite = deadEnemy;
 		
 		// Increase the score by 100 points
-		score.score += 100;
+		//score.score += 100;
 		
 		// Set dead to true.
 		dead = true;
@@ -110,6 +113,20 @@ public class Boss : MonoBehaviour
 		
 		// Instantiate the 100 points prefab at this point.
 		Instantiate(hundredPointsUI, scorePos, Quaternion.identity);
+
+		if(isIntro) {
+			spriteRenderer = GameObject.Find ("door_open_boss").GetComponent<SpriteRenderer> (); 
+			spriteRenderer.sprite = newSpriteDoor;
+
+			spriteRenderer = GameObject.Find ("Bazooka").GetComponent<SpriteRenderer> (); 
+			spriteRenderer.sprite = null;
+
+			spriteRenderer = GameObject.Find ("lifebar_full").GetComponent<SpriteRenderer> (); 
+			spriteRenderer.sprite = newSpriteLife;
+
+
+		}
+
 	}
 	
 	
