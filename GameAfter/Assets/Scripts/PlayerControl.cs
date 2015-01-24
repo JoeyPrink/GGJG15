@@ -139,6 +139,7 @@ public class PlayerControl : MonoBehaviour
 	}
 
 	public void forcedJump(float jumpforce){
+		rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x,0);
 		rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 	}
 
