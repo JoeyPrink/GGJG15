@@ -3,10 +3,8 @@ using System.Collections;
 
 public class BoxIndestructible : MonoBehaviour {
 	
-	private SpriteRenderer ren;			// Reference to the sprite renderer.
-	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
+	private MeshRenderer ren;			// Reference to the sprite renderer.
 	private bool destroyed = false;			// Whether or not the enemy is dead.
-	private Score score;				// Reference to the Score script.
 
 	bool holding = false;
 	int direction = 0;
@@ -16,10 +14,8 @@ public class BoxIndestructible : MonoBehaviour {
 	void Awake()
 	{
 		// Setting up the references.
-		ren = transform.Find("body").GetComponent<SpriteRenderer>();
-		frontCheck = transform.Find("frontCheck").transform;
-		score = GameObject.Find("Score").GetComponent<Score>();
-		
+		ren = transform.Find("Cube").GetComponent<MeshRenderer>();
+
 		//playerTransform = GameObject.Find("Player").transform;
 		
 	}
