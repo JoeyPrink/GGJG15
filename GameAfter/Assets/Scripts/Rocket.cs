@@ -47,6 +47,17 @@ public class Rocket : MonoBehaviour
 			// Destroy the rocket.
 			Destroy (gameObject);
 		}
+		else if (col.tag == "AnnoyingPerson") 
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<AnnoyingPerson> ().Hurt ();
+			
+			// Call the explosion instantiation.
+			OnExplode ();
+			
+			// Destroy the rocket.
+			Destroy (gameObject);
+		}
 		else if (col.tag == "box_destructible") 
 		{
 			// ... find the Enemy script and call the Hurt function.
