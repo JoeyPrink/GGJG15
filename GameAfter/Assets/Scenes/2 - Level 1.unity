@@ -2499,7 +2499,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &67723993
 BoxCollider2D:
@@ -11365,7 +11373,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &378919651
 BoxCollider2D:
@@ -23262,7 +23278,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &687277729
 BoxCollider2D:
@@ -24203,7 +24227,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &707543895
 BoxCollider2D:
@@ -31194,7 +31226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480532, guid: ae8e9ff017b5746f5915d3a53c1ff87d, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 480532, guid: ae8e9ff017b5746f5915d3a53c1ff87d, type: 2}
       propertyPath: m_LocalScale.x
@@ -45343,7 +45375,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &1288693036
 BoxCollider2D:
@@ -56259,7 +56299,7 @@ Transform:
   m_GameObject: {fileID: 1590023095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -53, y: 6, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.79999995, y: 1.79999995, z: 1.79999995}
   m_Children:
   - {fileID: 1621921665}
   m_Father: {fileID: 88936081}
@@ -56295,7 +56335,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &1590023099
 BoxCollider2D:
@@ -63634,7 +63682,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 0}
+  hitClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!61 &1777666115
 BoxCollider2D:
