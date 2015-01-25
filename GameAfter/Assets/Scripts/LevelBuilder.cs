@@ -7,9 +7,16 @@ public class LevelBuilder : MonoBehaviour {
 	public GameObject BoxDestructible;
 	public GameObject BoxMovable;
 	public GameObject Grass;
+  public GameObject Tree;
+  public GameObject Mushroom;
+
+  public GameObject Cat;
+  public GameObject CatFood;
+  public GameObject CatBowl;
 
 	public GameObject DoorOpen;
-	public GameObject Stairs;
+  public GameObject DoorClosed;
+  public GameObject Stairs;
 
 	public Vector2 topLeft;
 	public TextAsset levelAsset;
@@ -30,6 +37,7 @@ public class LevelBuilder : MonoBehaviour {
 				case 'w':
  					block = (GameObject)(Instantiate(Wall));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
+          block.tag = "ground";
 					break;
 				case 'b':
 					block = (GameObject)(Instantiate(BoxDestructible));
@@ -42,20 +50,49 @@ public class LevelBuilder : MonoBehaviour {
 				case 'g':
 					block = (GameObject)(Instantiate(Grass));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
+          block.tag = "ground";
 					break;
+
+        case 'M':
+          block = (GameObject)(Instantiate(Mushroom));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
+        case 't':
+          block = (GameObject)(Instantiate(Tree));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
+
+        case 'f':
+          block = (GameObject)(Instantiate(CatFood));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
+        case 'F':
+          block = (GameObject)(Instantiate(CatBowl));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
+        case 'c':
+          block = (GameObject)(Instantiate(Cat));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
 
 				case 'd':
 					block = (GameObject)(Instantiate(DoorOpen));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
 					break;
+        case 'D':
+          block = (GameObject)(Instantiate(DoorClosed));
+          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+          break;
 				case 's':
 					block = (GameObject)(Instantiate(Stairs));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
+          block.tag = "ground";
 					break;
 				case 'S':
 					block = (GameObject)(Instantiate(Stairs));
 					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					//block.transform;
+					block.transform.localScale = new Vector3(-1, 1, 1);
+          block.tag = "ground";
 					break;
 				// TODO more types?
 				default:
@@ -68,6 +105,10 @@ public class LevelBuilder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	  if(Input.GetKeyDown(KeyCode.R)) {
+      foreach(GameObject g in GameObject.FindGameObjectsWithTag("ground")) {
+        g.AddComponent<Rigidbody2D>();
+      }
+    }
 	}
 }

@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 450082}
   - 61: {fileID: 6121108}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grasstile
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
