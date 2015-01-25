@@ -6,7 +6,12 @@ public class BoxIndestructible : MonoBehaviour {
 	private MeshRenderer ren;			// Reference to the sprite renderer.
 	private bool destroyed = false;			// Whether or not the enemy is dead.
 
+	public AudioClip[] moveClips;
+	public AudioClip[] hitClips;
+	public AudioClip[] pickupClips;
+
 	bool holding = false;
+	bool wasHolding = false;
 	int direction = 0;
 	private GameObject colObj;
 	private BoxCollider2D box2DColloder;
@@ -31,17 +36,26 @@ public class BoxIndestructible : MonoBehaviour {
 			float x = (float) (colObj.transform.position.x + direction);
 			float y = colObj.transform.position.y;
 			
-			Vector3 vect = new Vector3(x,y,colObj.transform.position.z);
+			Vector3 vect = new Vector3(x,y,this.transform.position.z);
 			
 			this.transform.position = vect;
 			this.transform.rotation = colObj.transform.rotation;
+
+			wasHolding = true;
 			
 			//this.transform.position = colObj.transform.position;
 		}
 		else 
 		{
-			Debug.Log ("no longer holding");
 			holding =false;
+
+			if (wasHolding)
+			{
+				int i = Random.Range(0, moveClips.Length);
+				AudioSource.PlayClipAtPoint(moveClips[i], transform.position);
+				wasHolding = false;
+			}
+
 			//this.collider2D.enabled = true;
 			//this.rigidbody2D.isKinematic = false;
 			//Destroy(colObj);
@@ -75,6 +89,9 @@ public class BoxIndestructible : MonoBehaviour {
 				
 				holding = true;
 				colObj = col.gameObject;
+
+				int i = Random.Range(0, pickupClips.Length);
+				AudioSource.PlayClipAtPoint(pickupClips[i], transform.position);
 				
 				//this.collider2D.enabled = false;
 				//rigidbody.isKinematic = true;

@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22, y: 2, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -20.9400005, y: 2.21000004, z: 0}
+  m_LocalScale: {x: 1.79999995, y: 1.79999995, z: 1.79999995}
   m_Children:
   - {fileID: 480534}
   m_Father: {fileID: 0}
@@ -127,7 +127,15 @@ MonoBehaviour:
   HP: 2
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
-  deathClips: []
+  moveClips:
+  - {fileID: 8300000, guid: 8ea8069f28c191c46a9a635b09e508c1, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: 807de3d8ce52ae94ba042827774c96db, type: 3}
+  - {fileID: 8300000, guid: c1700da1caa5cf54e89b3294e42107fd, type: 3}
+  pickupClips:
+  - {fileID: 8300000, guid: 03a6864e2c6329b4492f30b42c7aedc9, type: 3}
+  - {fileID: 8300000, guid: 133ba1ee54815de4d8e1b756b4aa9ef2, type: 3}
+  - {fileID: 8300000, guid: f94197da05686d74887f2fa53d5dcccb, type: 3}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!1001 &100100000
 Prefab:
