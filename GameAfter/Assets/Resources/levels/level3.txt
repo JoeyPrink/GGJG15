@@ -2,19 +2,19 @@ w
 w
 w                   
 w                   
-w                  wwwwwwww
-w                 wwwwwwwwww
-w                wwwwwwwwwwww
-w               wwwwwwwwwwwwww                                                         wwww
-w               w            w                                                         wwww
-w               w            w                                                         wwww
-w               wB           w                                                         wwww
-w               wwwwww       w                                                         wwww
-w               w     w      w                                                         wwww
-w tttt                                                                                 wwww
-wf    M         d   c     F  d                                                         wwww
-gwwgggggggggggggwwwwwwwwwwwwwwggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+w                                                wwwwwwww
+w                                               wwwwwwwwww
+w                                              wwwwwwwwwwww
+w                                             wwwwwwwwwwwwww                                               wwww
+w                                             w            w                                               wwww
+w                                             w            w                                               wwww
+w                                             wB           w                                               wwww
+w                                             wwwwww       w                                               wwww
+w                                             w     w      w                                               wwww
+w               M                                                                                           www
+w      f  t t t                               d   c     F  d                                               Dwww
+gwwgggggggggggggggggggggggggggggggggggggggggggwwwwwwwwwwwwwwggggggggggggggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
