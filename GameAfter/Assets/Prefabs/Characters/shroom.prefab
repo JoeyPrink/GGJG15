@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.76000023, y: 6.80000019, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -107, y: -6, z: 0}
+  m_LocalScale: {x: .49000001, y: .49000001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 134846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e968bf52f150aa84e9f087ab1d95dcb8, type: 3}
+  m_Script: {fileID: 11500000, guid: d59cb3956307848ed9adcec50a187fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 20
+  jumpforce: 50
 --- !u!212 &21234846
 SpriteRenderer:
   m_ObjectHideFlags: 1

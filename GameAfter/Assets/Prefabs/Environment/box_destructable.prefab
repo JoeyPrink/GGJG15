@@ -128,14 +128,14 @@ MonoBehaviour:
   material_damaged: {fileID: 2100000, guid: e06478938a7f86445907231cff320094, type: 2}
   material_destroyed: {fileID: 0}
   moveClips:
-  - {fileID: 8300000, guid: 8ea8069f28c191c46a9a635b09e508c1, type: 3}
+  - {fileID: 8300000, guid: c252200b2178e03448725acc0c63ca8d, type: 3}
   hitClips:
-  - {fileID: 8300000, guid: 807de3d8ce52ae94ba042827774c96db, type: 3}
-  - {fileID: 8300000, guid: c1700da1caa5cf54e89b3294e42107fd, type: 3}
+  - {fileID: 8300000, guid: f48de759dfa99674aa0304e4cae65851, type: 3}
+  - {fileID: 8300000, guid: 2803cde4b7f87504e8841d8259925bad, type: 3}
   pickupClips:
-  - {fileID: 8300000, guid: 03a6864e2c6329b4492f30b42c7aedc9, type: 3}
-  - {fileID: 8300000, guid: 133ba1ee54815de4d8e1b756b4aa9ef2, type: 3}
-  - {fileID: 8300000, guid: f94197da05686d74887f2fa53d5dcccb, type: 3}
+  - {fileID: 8300000, guid: ba3002c7d590d1144bdf220e2270e0d8, type: 3}
+  - {fileID: 8300000, guid: 9a76991d78bc7254e816686e5b259703, type: 3}
+  - {fileID: 8300000, guid: eab4d9ccbf291f64bac6b2a31db79d6f, type: 3}
   hundredPointsUI: {fileID: 100006, guid: 31974361bc9e44fb18c77b64a4cb3bbd, type: 2}
 --- !u!1001 &100100000
 Prefab:
