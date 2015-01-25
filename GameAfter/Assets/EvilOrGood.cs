@@ -17,7 +17,7 @@ public class EvilOrGood : MonoBehaviour
 		private SpriteRenderer spriteRenderer;
 		private SpriteRenderer spriteRenderer2;
 		private bool end;
-		public int counter = 400;
+		public int counter = 300;
 	
 		void Start ()
 		{
@@ -32,13 +32,13 @@ public class EvilOrGood : MonoBehaviour
 		{
 				if (end) {
 						counter = counter - 1;
-						if (counter <= 200) {
+						if (counter <= 100) {
 								foreach (GameObject g in GameObject.FindGameObjectsWithTag("ground")) {
 										g.AddComponent<Rigidbody2D> ();
 								}
 						}
 						if (counter <= 0) {
-								Application.LoadLevel (Application.loadedLevelName);
+								Application.LoadLevel ("6 - Credits");
 
 						}
 				}

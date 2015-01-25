@@ -14,7 +14,7 @@ public class JumpToLevel3 : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		
+		Debug.Log ("yeah");
 		Application.LoadLevel ("4 - Level 3");
 		
 	}
