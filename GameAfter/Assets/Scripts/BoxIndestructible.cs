@@ -36,7 +36,7 @@ public class BoxIndestructible : MonoBehaviour {
 			float x = (float) (colObj.transform.position.x + direction);
 			float y = colObj.transform.position.y;
 			
-			Vector3 vect = new Vector3(x,y,colObj.transform.position.z);
+			Vector3 vect = new Vector3(x,y,this.transform.position.z);
 			
 			this.transform.position = vect;
 			this.transform.rotation = colObj.transform.rotation;
