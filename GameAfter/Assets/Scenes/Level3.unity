@@ -256,11 +256,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: maxXAndY.x
-      value: 40
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: minXAndY.x
-      value: -20
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_BackGroundColor.r
@@ -276,11 +276,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: minXAndY.y
-      value: -20
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: maxXAndY.y
-      value: 20
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
@@ -420,10 +420,16 @@ MonoBehaviour:
   BoxDestructible: {fileID: 180532, guid: ae8e9ff017b5746f5915d3a53c1ff87d, type: 2}
   BoxMovable: {fileID: 188058, guid: 567446dc0858248aa86c177402dabeff, type: 2}
   Grass: {fileID: 150082, guid: 461a63397fe303140b6e1a27c0f29588, type: 2}
+  Tree: {fileID: 100002, guid: 57140ea2e095b7d499cc020018046a2e, type: 2}
+  Mushroom: {fileID: 134846, guid: b82b71e9ed7b72c48bc75edafcceb0ba, type: 2}
+  Cat: {fileID: 128034, guid: aa9215274240b0646aa733d703608cc3, type: 2}
+  CatFood: {fileID: 128034, guid: aa9215274240b0646aa733d703608cc3, type: 2}
+  CatBowl: {fileID: 128034, guid: aa9215274240b0646aa733d703608cc3, type: 2}
   DoorOpen: {fileID: 100002, guid: 6f09464934354df4ca5b791c7bd7cb5b, type: 2}
+  DoorClosed: {fileID: 100002, guid: 6f09464934354df4ca5b791c7bd7cb5b, type: 2}
   Stairs: {fileID: 100002, guid: d3d9228fbb843e34aab4c8bd8abe79e7, type: 2}
   topLeft: {x: 0, y: 0}
-  levelAsset: {fileID: 4900000, guid: 9a0f0203afa78924c8bff4fc6ebb9391, type: 3}
+  levelAsset: {fileID: 4900000, guid: cd25ac231eb808d43bb91483ad3c0bf9, type: 3}
 --- !u!4 &1433977588
 Transform:
   m_ObjectHideFlags: 0
@@ -466,7 +472,7 @@ Transform:
   m_PrefabInternal: {fileID: 1845800134}
   m_GameObject: {fileID: 1462492305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5657115, y: 6.15083504, z: -1}
+  m_LocalPosition: {x: 4.5657115, y: 9.25276375, z: -1}
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   m_Children:
   - {fileID: 1508929937}
@@ -867,7 +873,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 462192, guid: 11b343e7392731c408ffd5e18d356e7b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.15083504
+      value: 9.25276375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11b343e7392731c408ffd5e18d356e7b, type: 2}
@@ -945,8 +951,8 @@ MonoBehaviour:
   yMargin: 2
   xSmooth: 2
   ySmooth: 2
-  maxXAndY: {x: 40, y: 20}
-  minXAndY: {x: -20, y: -20}
+  maxXAndY: {x: 400, y: 200}
+  minXAndY: {x: -200, y: -200}
 --- !u!124 &1972830849
 Behaviour:
   m_ObjectHideFlags: 0
