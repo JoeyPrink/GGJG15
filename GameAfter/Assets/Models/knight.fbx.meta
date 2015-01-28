@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: de6cd5e73a4c359409bdc07df83b87fb
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arm.Lower.L
+    100002: Arm.Lower.L_end
+    100004: Arm.Lower.R
+    100006: Arm.Lower.R_end
+    100008: Arm.Upper.L
+    100010: Arm.Upper.R
+    100012: Armature
+    100014: Foot.Back.L
+    100016: Foot.Back.R
+    100018: Foot.Front.L
+    100020: Foot.Front.R
+    100022: Foot.Toes.L
+    100024: Foot.Toes.L_end
+    100026: Foot.Toes.R
+    100028: Foot.Toes.R_end
+    100030: Head
+    100032: Head_end
+    100034: Hip.L
+    100036: Hip.R
+    100038: Knight
+    100040: //RootNode
+    100042: Leg.Lower.L
+    100044: Leg.Lower.R
+    100046: Leg.Upper.L
+    100048: Leg.Upper.R
+    100050: Neck
+    100052: Root
+    100054: Shoulder.L
+    100056: Shoulder.R
+    100058: Spine.Lower
+    100060: Spine.Upper
+    400000: Arm.Lower.L
+    400002: Arm.Lower.L_end
+    400004: Arm.Lower.R
+    400006: Arm.Lower.R_end
+    400008: Arm.Upper.L
+    400010: Arm.Upper.R
+    400012: Armature
+    400014: Foot.Back.L
+    400016: Foot.Back.R
+    400018: Foot.Front.L
+    400020: Foot.Front.R
+    400022: Foot.Toes.L
+    400024: Foot.Toes.L_end
+    400026: Foot.Toes.R
+    400028: Foot.Toes.R_end
+    400030: Head
+    400032: Head_end
+    400034: Hip.L
+    400036: Hip.R
+    400038: Knight
+    400040: //RootNode
+    400042: Leg.Lower.L
+    400044: Leg.Lower.R
+    400046: Leg.Upper.L
+    400048: Leg.Upper.R
+    400050: Neck
+    400052: Root
+    400054: Shoulder.L
+    400056: Shoulder.R
+    400058: Spine.Lower
+    400060: Spine.Upper
+    4300000: Knight
+    7400000: ArmatureAction.001
+    7400002: WalkActionStrip
+    7400004: IdleStrip
+    7400006: Armature|ArmatureAction.001
+    7400008: Armature|Plane.001Action
+    7400010: Knight|Plane.001Action
+    9500000: //RootNode
+    13700000: Knight
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
