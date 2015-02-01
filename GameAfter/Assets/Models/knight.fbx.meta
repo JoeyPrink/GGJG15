@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ca6f5aa44c997a4d861fa869795d742
+guid: a7231fee44bbcbb40b1a66339ad1f5d6
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -82,10 +82,14 @@ ModelImporter:
     400074: Thumb.R
     400076: Thumb.R_end
     4300000: Knight
-    7400000: AttackStrip
-    7400002: JumpStrip
-    7400004: WalkActionStrip
-    7400006: IdleStrip
+    7400000: IdleLongStrip
+    7400002: AttackStrip
+    7400004: JumpStrip
+    7400006: WalkActionStrip
+    7400008: IdleStrip
+    7400010: Armature|KnightMoves
+    7400012: Armature|Plane.001Action
+    7400014: Knight|Plane.001Action
     9500000: //RootNode
     13700000: Knight
   materials:

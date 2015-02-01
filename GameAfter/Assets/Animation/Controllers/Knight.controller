@@ -70,7 +70,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110200000}
   m_DstState: {fileID: 110281844}
-  m_TransitionDuration: .0868354663
+  m_TransitionDuration: .0156493988
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 3
@@ -90,7 +90,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 0}
   m_DstState: {fileID: 110235870}
-  m_TransitionDuration: .0680511594
+  m_TransitionDuration: .0214857068
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
@@ -158,7 +158,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: Jump
     m_EventTreshold: 0
     m_ExitTime: .882854223
   m_Atomic: 1
@@ -194,13 +194,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110267209}
   m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .133131936
-  m_TransitionOffset: 0
+  m_TransitionDuration: .101994716
+  m_TransitionOffset: .00041929743
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: Jump
     m_EventTreshold: 0
-    m_ExitTime: .583333373
+    m_ExitTime: .36974138
   m_Atomic: 0
   m_Solo: 0
   m_Mute: 0
@@ -214,7 +214,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110200000}
   m_DstState: {fileID: 110267209}
-  m_TransitionDuration: .183605686
+  m_TransitionDuration: .00586996833
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
@@ -254,7 +254,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: d6710a3ac0ff1114d8e76c620eadf93a, type: 2}
+  - {fileID: 7400000, guid: 2a15ae293d36b324da6072cc4e625693, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 768, y: -36, z: 0}
   m_IKOnFeet: 0
@@ -269,7 +269,7 @@ State:
   m_Speed: 2
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 37963e2f6d2ce96458cdb9f9034324ab, type: 2}
+  - {fileID: 7400000, guid: 7072079aeb947204b8d05ed4bc02d90b, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 744, y: -144, z: 0}
   m_IKOnFeet: 0
@@ -344,7 +344,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: f6fdde87a6f55244181baf873938e29b, type: 2}
+  - {fileID: 7400000, guid: 66881520b96663d479985cb81025a8cb, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 936, y: 96, z: 0}
   m_IKOnFeet: 0
@@ -386,10 +386,10 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: walk - ag
-  m_Speed: 1.5
+  m_Speed: 2
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: a366232dc27793547af3808f3fce1305, type: 2}
+  - {fileID: 7400000, guid: b8b33267806bd0849aef4dd1dcb18d5e, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 624, y: 96, z: 0}
   m_IKOnFeet: 0
