@@ -33,8 +33,9 @@ public class EvilOrGood : MonoBehaviour
 		private SpriteRenderer spriteRenderer5;
 		private SpriteRenderer spriteRenderer6;
 		private bool end;
-		public int counter = 300;
-	
+		public float counter = 3; // seconds
+    private bool worldDestroyed = false;
+
 		void Start ()
 		{
 				spriteRenderer = GameObject.Find ("EvilOrGoodScreen").GetComponent<SpriteRenderer> ();
@@ -56,11 +57,12 @@ public class EvilOrGood : MonoBehaviour
 		void Update ()
 		{
 				if (end) {
-						counter = counter - 1;
-						if (counter <= 100) {
+						counter = counter - Time.deltaTime;
+            if (counter < 1 && !worldDestroyed) {
 								foreach (GameObject g in GameObject.FindGameObjectsWithTag("ground")) {
 										g.AddComponent<Rigidbody2D> ();
 								}
+                worldDestroyed = true;
 						}
 						if (counter <= 0) {
 								Application.LoadLevel ("6 - Credits");
