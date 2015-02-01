@@ -16,6 +16,13 @@ public class CameraFollow : MonoBehaviour
 
 	void Awake ()
 	{
+    // Es kann nur einen geben!
+    foreach (GameObject g in GameObject.FindGameObjectsWithTag("Player")) {
+      if (g.name.EndsWith("(Clone)")) {
+        GameObject.DestroyImmediate(g);
+      }
+    }
+
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
