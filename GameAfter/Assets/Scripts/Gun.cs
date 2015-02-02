@@ -45,8 +45,14 @@ public class Gun : MonoBehaviour
 		if(Input.GetButtonDown("Fire1"))
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
-			anim.SetTrigger("Shoot");
-			audio.Play();
+      GameObject sword = GameObject.FindWithTag("Sword");
+      if (sword && sword.GetComponent<MeshRenderer>().enabled) {
+        anim.SetTrigger("Strike");
+      } else {
+        anim.SetTrigger("Shoot");
+      }
+
+      audio.Play();
 			rotate_sword = true;
 			orginal_z_rotation = this.transform.rotation.z;
 
