@@ -6,7 +6,6 @@ public class EvilOrGood : MonoBehaviour
 	
 		public Sprite sprite1; // good 
 		public Sprite sprite2; // evil
-
 	
 		public Sprite sprite3; // good 
 		public Sprite sprite4; // evil
@@ -33,7 +32,7 @@ public class EvilOrGood : MonoBehaviour
 		private SpriteRenderer spriteRenderer5;
 		private SpriteRenderer spriteRenderer6;
 		private bool end;
-		public float counter = 3; // seconds
+		public float counter = 10; // seconds
     private bool worldDestroyed = false;
 
 		void Start ()
@@ -56,20 +55,20 @@ public class EvilOrGood : MonoBehaviour
 	
 		void Update ()
 		{
-				if (end) {
-						counter = counter - Time.deltaTime;
-            if (counter < 1 && !worldDestroyed) {
-								foreach (GameObject g in GameObject.FindGameObjectsWithTag("ground")) {
-										g.AddComponent<Rigidbody2D> ();
-								}
-                worldDestroyed = true;
-						}
-						if (counter <= 0) {
-								Application.LoadLevel ("6 - Credits");
-
-						}
-				}
-
+			if (end) {
+				counter = counter - Time.deltaTime;
+            
+                if (counter < 3 && !worldDestroyed) {
+				    foreach (GameObject g in GameObject.FindGameObjectsWithTag("ground")) {
+					    g.AddComponent<Rigidbody2D> ();
+				    }
+                    worldDestroyed = true;
+			    }
+			
+                if (counter <= 0) {
+					Application.LoadLevel ("6 - Credits");
+                }
+		    }
 		}
 	
 		void changeSprites ()
