@@ -18,6 +18,8 @@ public class LevelBuilder : MonoBehaviour {
   public GameObject DoorClosed;
   public GameObject Stairs;
 
+  public GameObject spikes;
+
 	public Vector2 topLeft;
 	public TextAsset levelAsset;
 
@@ -33,73 +35,80 @@ public class LevelBuilder : MonoBehaviour {
 			for(int x = 0; x < line.Length; x++) {
 				block = null;
 
-				switch(line[x]) {
-				case 'w':
- 					block = (GameObject)(Instantiate(Wall));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-          block.tag = "ground";
-					break;
-				case 'b':
-					block = (GameObject)(Instantiate(BoxDestructible));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					break;
-				case 'm':
-					block = (GameObject)(Instantiate(BoxMovable));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					break;
-				case 'g':
-					block = (GameObject)(Instantiate(Grass));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-          block.tag = "ground";
-					break;
+                switch (line[x])
+                {
+                    case 'w':
+                        block = (GameObject)(Instantiate(Wall));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        block.tag = "ground";
+                        break;
+                    case 'b':
+                        block = (GameObject)(Instantiate(BoxDestructible));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'm':
+                        block = (GameObject)(Instantiate(BoxMovable));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'g':
+                        block = (GameObject)(Instantiate(Grass));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        block.tag = "ground";
+                        break;
 
-        case 'M':
-          block = (GameObject)(Instantiate(Mushroom));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
-        case 't':
-          block = (GameObject)(Instantiate(Tree));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
+                    case 'M':
+                        block = (GameObject)(Instantiate(Mushroom));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 't':
+                        block = (GameObject)(Instantiate(Tree));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
 
-        case 'f':
-          block = (GameObject)(Instantiate(CatFood));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
-        case 'F':
-          block = (GameObject)(Instantiate(CatBowl));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
-        case 'c':
-          block = (GameObject)(Instantiate(Cat));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
+                    case 'k':
+                        block = (GameObject)(Instantiate(spikes));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'f':
+                        block = (GameObject)(Instantiate(CatFood));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'F':
+                        block = (GameObject)(Instantiate(CatBowl));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'c':
+                        block = (GameObject)(Instantiate(Cat));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
 
-				case 'd':
-					block = (GameObject)(Instantiate(DoorOpen));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					break;
-        case 'D':
-          block = (GameObject)(Instantiate(DoorClosed));
-          block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
-          break;
-				case 's':
-					block = (GameObject)(Instantiate(Stairs));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-          block.tag = "ground";
-					break;
-				case 'S':
-					block = (GameObject)(Instantiate(Stairs));
-					block.transform.position = new Vector3(topLeft.x + x*2, topLeft.y - y*2, 0);
-					block.transform.localScale = new Vector3(-1, 1, 1);
-          block.tag = "ground";
-					break;
-				// TODO more types?
-				default:
-					block = null;
-					break;
-				}
-			}
+                    case 'd':
+                        block = (GameObject)(Instantiate(DoorOpen));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 'D':
+                        block = (GameObject)(Instantiate(DoorClosed));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        break;
+                    case 's':
+                        block = (GameObject)(Instantiate(Stairs));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2, 0);
+                        block.tag = "ground";
+                        break;
+                    case 'S':
+                        block = (GameObject)(Instantiate(Stairs));
+                        block.transform.position = new Vector3(topLeft.x + x * 2, topLeft.y - y * 2 - 0.2f, 0);
+                        block.transform.localScale = new Vector3(-1, 1, 1);
+                        block.transform.GetChild(0).gameObject.AddComponent<PolygonCollider2D>();
+                        block.transform.GetChild(0).gameObject.tag = "ground";
+                        block.tag = "ground";
+                        break;
+                    // TODO more types?
+                    default:
+                        block = null;
+                        break;
+                }
+            }
 		}
 	}
 	
