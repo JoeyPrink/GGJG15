@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &136392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436392}
+  - 108: {fileID: 10836392}
+  m_Layer: 9
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &162290
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +721,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &436392
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.9000001, z: -2.71000004}
+  m_LocalScale: {x: .833333313, y: .833333313, z: .833333313}
+  m_Children: []
+  m_Father: {fileID: 462292}
+  m_RootOrder: 4
 --- !u!4 &462290
 Transform:
   m_ObjectHideFlags: 1
@@ -725,13 +753,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.3299999, y: 1.80999994, z: 0}
+  m_LocalPosition: {x: 27.7000008, y: 1.89999998, z: 0}
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   m_Children:
   - {fileID: 462294}
   - {fileID: 462296}
   - {fileID: 462290}
   - {fileID: 462298}
+  - {fileID: 436392}
   - {fileID: 490510}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -778,11 +807,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.9000001, z: -2.71000004}
+  m_LocalPosition: {x: 0, y: 2.89999986, z: 2.71000004}
   m_LocalScale: {x: .833333313, y: .833333313, z: .833333313}
   m_Children: []
   m_Father: {fileID: 462292}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &499770
 Transform:
   m_ObjectHideFlags: 1
@@ -1351,7 +1380,7 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162292}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
+  m_Material: {fileID: 6200000, guid: 637c3ddb215e6c54aa47213d57a5c40f, type: 2}
   m_IsTrigger: 0
   m_Radius: .360000014
   m_Center: {x: .0199999996, y: -.219999999}
@@ -1362,10 +1391,10 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162292}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: .709999979, y: 1.63}
-  m_Center: {x: .0299999993, y: .819999993}
+  m_Size: {x: .709999979, y: 2.01999998}
+  m_Center: {x: .0299999993, y: 1.00999999}
 --- !u!82 &8262294
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1555,12 +1584,12 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!108 &10831892
+--- !u!108 &10836392
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131892}
+  m_GameObject: {fileID: 136392}
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
